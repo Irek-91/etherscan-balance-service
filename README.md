@@ -29,22 +29,15 @@ This service provides an API endpoint to determine the Ethereum address with the
 
 ## Running the Service
 
-### Development Mode
 ```bash
 npm run start:dev
-```
-
-### Production Mode
-```bash
-npm run build
-npm start
 ```
 
 ## Usage
 
 Access the endpoint:
 ```bash
-GET /api/max-balance-change
+GET http://localhost:3000/api/max-balance-change
 ```
 
 Example response:
