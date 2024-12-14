@@ -14,7 +14,6 @@ This service provides an API endpoint to determine the Ethereum address with the
 1. Clone the repository:
    ```bash
    git clone https://github.com/Irek-91/etherscan-balance-service.git
-   cd etherscan-balance-service
    ```
 
 2. Install dependencies:
@@ -22,7 +21,7 @@ This service provides an API endpoint to determine the Ethereum address with the
    npm install
    ```
 
-3. Set your Etherscan API key in the .env file:
+3. Create your file .env in the root folder and set your Etherscan API key:
    ```
     ETHERSCAN_API_KEY=
    ```
