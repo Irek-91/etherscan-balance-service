@@ -13,7 +13,7 @@ This service provides an API endpoint to determine the Ethereum address with the
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/etherscan-balance-service.git
+   git clone https://github.com/Irek-91/etherscan-balance-service.git
    cd etherscan-balance-service
    ```
 
