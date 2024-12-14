@@ -32,8 +32,13 @@ export class AppService {
         blockNumber <= lastBlockNumber;
         blockNumber++
       ) {
-        const blockData = await this.getBlockByNumber(blockNumber);
-        if (!blockData || !blockData.transactions) {
+        const blockData: BlockData | null =
+          await this.getBlockByNumber(blockNumber);
+        if (!blockData) {
+          return { error: `Error fetching block ${blockNumber}` };
+        }
+
+        if (!blockData.transactions) {
           return { error: `Failed to process block ${blockNumber}` };
         }
 
